@@ -1,0 +1,36 @@
+version: "3.9"
+services:
+  frontend:
+    container_name: advanced-programming-frontend # コンテナの名前
+    build:
+      # 読み取るDockerFileの設定
+      context: .
+      dockerfile: docker/frontend/Dockerfile
+    volumes:
+      # 同期先の設定
+      - type: bind
+        source: ./src/frontend/
+        target: /usr/src/frontend
+    command: sh -c "cd site && npm start"
+    ports:
+      - 3000:3000
+    stdin_open: true # 標準入力をコンテナと紐付ける様に
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true # ホットリロードを行う設定
+
+  backend:
+    container_name: advanced-programming-backend # コンテナの名前
+    build:
+      # 読み取るDockerFileの設定
+      context: .
+      dockerfile: docker/backend/Dockerfile
+    volumes:
+      # 同期先の設定
+      - type: bind
+        source: ./src/backend/
+        target: /usr/src/backend
+    ports:
+      - 3001:3001
+    stdin_open: true # 標準入力をコンテナと紐付ける�
+    tty: true

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  color: #ff6b6b;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #4ecdc4;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: #555;
+  line-height: 0.5;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #ff8787;
+}
+
+.result {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.compatibility-score {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4ecdc4;
+}
+
+.compatibility-score-2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #4ecdc4;
+}
+
+
+.error-message {
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.loading {
+  color: #4ecdc4;
+  font-weight: 600;
+}
