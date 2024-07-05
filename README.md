@@ -1,5 +1,5 @@
 # compatibility analysis
-This repository was made for the class of UTokyo. You can successfully implement this project by following the explanation below.
+This repository was created for the UTokyo class. You can successfully complete this project by following the instructions below.
 
 ## how to build container
 ```
@@ -9,14 +9,20 @@ docker-compose up -d
 ```
 
 ## usage
-if you want to edit frontend:
+if you want to edit the frontend codes, execute:
 ```
 docker-compose exec frontend bash
 ```
-if you want to edit backend:
+after that, visit http://localhost:3000/ .
+
+if you want to edit the backend codes, execute:
 ```
 docker-compose exec backend bash
 ```
-
-
-## 
+when you execute this project, 
+1. execute:
+```
+python3 main.py
+```
+2. visit http://localhost:3000/ .
+3. put the buttom in the page, which reset the data in 127.0.0.1:3001 and execute (or re-execute) the main function.
