@@ -4,7 +4,7 @@ This repository was created for the UTokyo class. You can successfully complete 
 attention: This repository is suited for only ubuntuOS.
 
 ## Prerequisites
-install Docker and docker-compose.
+install Docker and docker-compose. If you haven't installed them yet, execute:
 ```
 curl https://get.docker.com | sh
 sudo usermod -aG docker $USER
