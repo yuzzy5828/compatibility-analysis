@@ -4,7 +4,7 @@ This repository was created for the UTokyo class. You can successfully complete 
 ## how to build container
 ```
 docker-compose build
-docker run --rm frontend sh -c "npx "
+docker run --rm frontend sh -c 'npx create-react-app site --template typescript'
 docker-compose up -d
 ```
 
