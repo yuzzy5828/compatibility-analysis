@@ -5,6 +5,14 @@ attention: This repository is suited for only ubuntuOS.
 
 ## Prerequisites
 install Docker and docker-compose.
+```
+curl https://get.docker.com | sh
+sudo usermod -aG docker $USER
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo curl -L https://github.com/docker/compose/releases/download/1.16.1(you have to find the latest version)/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
 
 ## how to build container
 ```
