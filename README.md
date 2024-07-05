@@ -3,6 +3,9 @@ This repository was created for the UTokyo class. You can successfully complete 
 
 attention: This repository is suited for only ubuntuOS.
 
+## Prerequisites
+install Docker and docker-compose.
+
 ## how to build container
 ```
 docker-compose build
