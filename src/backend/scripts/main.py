@@ -109,7 +109,7 @@ def main():
     cap.release()
 
     print(value)
-    result = ask_gpt("ある二人の相性を測ってみたところ，その数値は0~100のうち" + str(value) + "でした。どうすれば改善できますか？二人の関係はわからなくていいので，プライベートを勝手に想像し，とにかく辛辣なことを話してください．")
+    result = ask_gpt("ある二人の相性を測ってみたところ，その数値は0~100のうち" + str(value) + "でした。どうすれば改善できますか？")
     print(result)
     
     return [value, result]
