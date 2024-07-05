@@ -25,4 +25,4 @@ when you execute this project,
 python3 main.py
 ```
 2. visit http://localhost:3000/ .
-3. put the buttom in the page, which reset the data in 127.0.0.1:3001 and execute (or re-execute) the main function.
+3. put the buttom in the page, which reset the data in http://127.0.0.1:3001/ and execute (or re-execute) the main function.
