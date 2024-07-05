@@ -1,10 +1,12 @@
 # compatibility analysis
 This repository was created for the UTokyo class. You can successfully complete this project by following the instructions below.
 
+attention: This repository is suited for only ubuntuOS.
+
 ## how to build container
 ```
 docker-compose build
-docker run --rm frontend sh -c 'npx create-react-app site --template typescript'
+docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/video0:/dev/video0 frontend sh -c 'npx create-react-app site --template typescript'
 docker-compose up -d
 ```
 
