@@ -6,6 +6,8 @@ services:
       # 読み取るDockerFileの設定
       context: .
       dockerfile: docker/frontend/Dockerfile
+    device:
+      - "/dev/video0:/dev/video0"
     volumes:
       # 同期先の設定
       - type: bind
@@ -18,6 +20,7 @@ services:
     tty: true
     environment:
       - CHOKIDAR_USEPOLLING=true # ホットリロードを行う設定
+      - DISPLAY={$DISPLAY}
 
   backend:
     container_name: advanced-programming-backend # コンテナの名前
