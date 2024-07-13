@@ -22,6 +22,10 @@ docker-compose up -d
 ```
 
 ## usage
+First, you need to execute the command below for using GUI:
+```
+xhost +local:docker
+```
 if you want to edit the frontend codes, execute:
 ```
 docker-compose exec frontend bash
