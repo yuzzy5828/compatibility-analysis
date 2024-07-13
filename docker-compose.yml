@@ -13,6 +13,7 @@ services:
       - type: bind
         source: ./src/frontend/
         target: /usr/src/frontend
+      - /tmp/.X11-unix:/tmp/.X11-unix
     command: sh -c "cd site && npm start"
     ports:
       - 3000:3000
