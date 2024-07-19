@@ -1,7 +1,7 @@
 # compatibility analysis application
 This repository was created from scratch for the UTokyo class. You can successfully complete this project by following the instructions below.
 
-attention: This repository is suited for only ubuntuOS.
+attention: This repository is suited for only ubuntu.
 
 ## Prerequisites
 install Docker and docker-compose. If you haven't installed them yet, execute:
