@@ -1,5 +1,5 @@
 # compatibility analysis application
-This repository was created from scratch for the UTokyo class. You can successfully complete this project by following the instructions below.
+This repository was created from scratch for the class held at Utokyo. You can successfully complete this project by following the instructions below.
 
 attention: This repository is suited for only ubuntu.
 
